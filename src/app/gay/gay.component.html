@@ -1,0 +1,26 @@
+<p>{{i | currency:'INR'}}</p>
+<p>{{'02/04/2001' | date}}</p>
+<img [src]="i" alt="" srcset="">
+<button (click)="trans()">not gay</button>
+<!-- <a [routerlink]="gaypath">gayyyyyyyyyyyyy</a> -->
+<div *ngIf='fruit'>
+    <p *ngFor='let j of fruits'>{{j | uppercase}}</p>
+</div>
+<ul>
+    <!-- <li *ngFor="let f of employees">{{f.firstName}}</li> -->
+</ul>
+<table>
+    <tr>
+        <td>id</td>
+        <td>name</td>
+        <td>lastname</td>
+        <td>age</td>
+    </tr>
+    <tr *ngFor="let t of employees">
+        <td>{{t.id}}</td>
+        <td>{{t.firstName}}</td>
+        <td>{{t.lastName}}</td>
+        <td>{{t.age}}</td>
+    </tr>
+
+</table>
